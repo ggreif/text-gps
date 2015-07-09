@@ -1,7 +1,11 @@
+module Gps (encode, decode) where
+
 -- TODO: previous-line info encoding with whitespaces
 -- *Main Data.Char> [x|x<-['\0'..'\995000'], isSpace x]
 --    "\t\n\v\f\r \160\5760\8192\8193\8194\8195\8196\8197\8198\8199\8200\8201\8202\8239\8287\12288"
 -- http://en.wikipedia.org/wiki/Whitespace_character
+
+import Data.List
 
 encode :: String -> String
 encode = go (0 :: Int, 0 :: Int)
