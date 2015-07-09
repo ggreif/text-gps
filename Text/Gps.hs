@@ -1,4 +1,4 @@
-module Gps (encode, decode) where
+module Text.Gps (encode, decode) where
 
 -- TODO: previous-line info encoding with whitespaces
 -- *Main Data.Char> [x|x<-['\0'..'\995000'], isSpace x]
